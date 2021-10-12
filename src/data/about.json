@@ -1,0 +1,64 @@
+{
+  "username": "jean-françois pann",
+  "avatar": "/images/avatar-primary-bg.svg",
+  "objective": "<p>Je suis développeur </p> <p></p>",
+  "resumeUrl": "#",
+  "skills": [
+    {
+      "name": "HTML, CSS, Javascript",
+      "confidence": 85,
+      "color": "rgb(255, 209, 92)"
+    },
+    {
+      "name": "TypeScript",
+      "confidence": 70,
+      "color": "rgb(108, 108, 229)"
+    },
+    {
+      "name": "PostgreSQL, MySQL",
+      "confidence": 80,
+      "color": "rgb(255, 76, 96)"
+    },
+    {
+      "name": "Node JS, Express",
+      "confidence": 60,
+      "color": "rgb(255, 76, 96)"
+    },
+    {
+      "name": "PHP 7, Symfony",
+      "confidence": 80,
+      "color": "rgb(51, 105, 30)"
+    },
+    {
+      "name": "GIT",
+      "confidence": 75,
+      "color": "rgb(51, 105, 30)"
+    }
+  ],
+  "statistics": [
+    {
+      "number": 28,
+      "title": "Open-source projects",
+      "iconPrefix": "fab",
+      "iconName": "osi"
+    },
+    {
+      "number": 59,
+      "title": "Projects completed",
+      "iconPrefix": "fas",
+      "iconName": "tasks"
+    },
+    {
+      "number": 3285,
+      "title": "Cup of coffee",
+      "iconPrefix": "fas",
+      "iconName": "coffee"
+    },
+    {
+      "number": 2,
+      "title": "Publications",
+      "iconPrefix": "far",
+      "iconName": "newspaper"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "firstName": "jf",
+  "fullFirstName": "jean-françois",
+  "middleName": ".",
+  "lastName": "pann",
+  "avatar": "/images/profile180x180.png",
+  "titles": [
+    "Développeur Front-End",
+    "Intégrateur Web",
+    "Développeur Back-End"
+  ],
+  "socialNetworks": [
+    {
+      "link": "https://github.com/JeffSilverface",
+      "iconName": "faGithub"
+    },
+    {
+      "link": "https://www.linkedin.com/in/jfpann/",
+      "iconName": "faLinkedin"
+    }
+  ]
+}
