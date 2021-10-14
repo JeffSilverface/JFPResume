@@ -1,6 +1,6 @@
 {
-  "username": "jean-françois pann",
-  "avatar": "/images/avatar-primary-bg.svg",
+  "username": "Jean-François Pann",
+  "avatar": "/images/profile180x180.png",
   "objective": "<p>Je suis développeur </p> <p></p>",
   "resumeUrl": "#",
   "skills": [
@@ -37,26 +37,26 @@
   ],
   "statistics": [
     {
-      "number": 28,
-      "title": "Open-source projects",
+      "number": 20,
+      "title": "Années d'expériences de technicien",
       "iconPrefix": "fab",
       "iconName": "osi"
     },
     {
-      "number": 59,
-      "title": "Projects completed",
+      "number": 43,
+      "title": "Ans",
       "iconPrefix": "fas",
       "iconName": "tasks"
     },
     {
-      "number": 3285,
-      "title": "Cup of coffee",
+      "number": 125,
+      "title": "Tasses de thé",
       "iconPrefix": "fas",
       "iconName": "coffee"
     },
     {
       "number": 2,
-      "title": "Publications",
+      "title": "Projets Publiques Github",
       "iconPrefix": "far",
       "iconName": "newspaper"
     }

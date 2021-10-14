@@ -1,26 +1,26 @@
 {
-  "customContent": "Looking for custom jobs? <a href=\"#contact\">Click here</a> to contact me! <span role=\"img\" aria-label=\"wave\">👋</span>",
+  "customContent": "Besoin d'un travail personnalisé ? <a href=\"#contact\">Cliquez ici </a> et contactez moi ! <span role=\"img\" aria-label=\"wave\">👋</span>",
   "services": [
     {
-      "title": "UI/UX design",
-      "photo": "/images/service-1.svg",
+      "title": "Mon propre CV",
+      "photo": "/images/EfedusWareLauncher192x113.png",
       "backgroundColor": "rgb(108, 108, 229)",
-      "content": "Create better interfaces and experiences for the user, making the web, application's and technology easier for the user.",
+      "content": "Création de mon CV afin de présenter mes compétences et mon savoir faire. ",
       "delay": 0
     },
     {
-      "title": "Web Development",
-      "photo": "/images/service-2.svg",
+      "title": "Launcher EfedusWare",
+      "photo": "/images/EfedusWareLauncher192x113.png",
       "backgroundColor": "rgb(249, 215, 76)",
-      "content": "Tailor website for search engine optimisation, content organisation, user-friendly site, and effective calls to action.",
-      "delay": 1000
+      "content": "Développement d'une application Electron JS en Typescript avec React. (code source non disponible)",
+      "delay": 750
     },
     {
-      "title": "Photography",
-      "photo": "/images/service-3.svg",
-      "backgroundColor": "rgb(249, 123, 139)",
-      "content": "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
-      "delay": 2000
+      "title": "Site Web EfedusWare",
+      "photo": "/images/EfedusWareWebsite192x95.png",
+      "backgroundColor": "rgb(249, 215, 76)",
+      "content": "Développement en Typescript d'un Back-end Node et d'un Front-End React. (code source non disponible)",
+      "delay": 1500
     }
   ]
 }

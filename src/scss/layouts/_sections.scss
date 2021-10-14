@@ -7,7 +7,9 @@ section {
   position: relative;
 
   &.home {
-    background: $color-dark;
+    background: url(/images/Dune.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 0;
     height: 100vh;
     min-height: 100vh;
@@ -21,12 +23,12 @@ section {
 
       h1 {
         color: $color-white;
-        font-size: $font-size-largest;
+        font-size: $font-size-huge;
       }
 
       span {
         color: $color-white;
-        font-size: $font-size-normal;
+        font-size: $font-size-larger;
       }
     }
 

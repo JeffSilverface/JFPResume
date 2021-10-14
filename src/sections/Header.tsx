@@ -4,6 +4,12 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 import details from "../data/details.json";
 
+interface IProps {}
+
+interface IState {
+  scroll: boolean;
+}
+
 const Logo = styled.span({
   color: "#fff",
   fontSize: "36px",
@@ -17,7 +23,28 @@ const Dot = styled.span({
   display: "inline",
 });
 
-export class Header extends React.Component {
+let scrollBool: boolean = false;
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 400) {
+    scrollBool = true;
+  } else {
+    scrollBool = false;
+  }
+});
+
+export class Header extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
+    super(props);
+    this.state = {
+      scroll: scrollBool,
+    };
+  }
+
+  // {
+  //   hamburgerClickState ? "nav-menu nav-menu-active" : "nav-menu"
+  // }
+
   render() {
     return (
       <header className="kd-header fixed-top">
@@ -45,7 +72,7 @@ export class Header extends React.Component {
                 </Nav.Item>
                 <Nav.Item as="li">
                   <Scroller href="#education" className="nav-link">
-                    Parcours &amp; Experience
+                    Parcours
                   </Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">

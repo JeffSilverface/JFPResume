@@ -2,10 +2,10 @@
 /*                      HEADER                              
 /*=================================================================*/
 .kd-header {
-  background: $color-dark;
+  background: transparent;
   padding: 20px 0;
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
-  
+
   .navbar {
     padding: 0;
   }
@@ -21,6 +21,10 @@
         color: $color-white;
       }
     }
+  }
+
+  .active {
+    background: $color-dark;
   }
 
   .nav-link {
@@ -56,7 +60,7 @@
     border-radius: 0.25rem;
   }
 
-  button{
+  button {
     &.navbar-toggler {
       &:focus {
         outline: 0;
