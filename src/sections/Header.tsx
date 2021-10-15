@@ -23,31 +23,40 @@ const Dot = styled.span({
   display: "inline",
 });
 
-let scrollBool: boolean = false;
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 400) {
-    scrollBool = true;
-  } else {
-    scrollBool = false;
-  }
-});
-
 export class Header extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
-      scroll: scrollBool,
+      scroll: false,
     };
   }
 
-  // {
-  //   hamburgerClickState ? "nav-menu nav-menu-active" : "nav-menu"
-  // }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (window.scrollY < 850) {
+      this.setState({ scroll: false });
+    } else {
+      this.setState({ scroll: true });
+    }
+  };
 
   render() {
     return (
-      <header className="kd-header fixed-top">
+      <header
+        className={
+          this.state.scroll
+            ? "kd-header fixed-top color"
+            : "kd-header fixed-top"
+        }
+        onScroll={this.handleScroll}
+      >
         <Container>
           <Navbar expand="lg" variant="dark">
             <Navbar.Brand href="#">
