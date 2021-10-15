@@ -8,7 +8,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import details from "../data/details.json";
 
 const Dot = styled.div({
-  color: "#ff4c60",
+  color: "#f06000",
   display: "inline",
 });
 

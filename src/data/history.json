@@ -30,31 +30,31 @@
       "period": "2021",
       "company": "EfedusWare à Lorient",
       "title": "Développeur web en stage",
-      "description": "<p>Developpement d'application React, TypeScript et Electron JS</p>"
+      "description": ""
     },
     {
       "period": "2011 - 2020",
       "company": "Roux Service à Kervignac",
       "title": "Technicien pilote et formateur",
-      "description": "<p>Intervention sur site pour de la maintenance de matériel de retail</p>"
+      "description": ""
     },
     {
       "period": "2010 - 2011",
       "company": "Mesuris à Saint Philibert",
       "title": "Opérateur bathymétrique et technicien de maintenance et d'intégration",
-      "description": "<p>Relevés bathymétrique et intégration de matériel bathymétrique</p>"
+      "description": ""
     },
     {
       "period": "2007 - 2010",
       "company": "Neotek Ponsel",
       "title": "Technicien de maintenance",
-      "description": "<p>Maintenance de matériel de mesures environnementales</p>"
+      "description": ""
     },
     {
       "period": "2000 - 2006",
       "company": "Martec Serpe Iesm",
       "title": "Technicien de Maintenance, de Contrôle et Formateur Technique",
-      "description": "Maintenance de balises de détresse et formation à leur utilisation"
+      "description": ""
     }
   ]
 }

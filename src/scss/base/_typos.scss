@@ -2,8 +2,13 @@
 /*                      TYPOGRAPHY                              
 /*=================================================================*/
 
-h1, h2, h3, h4, h5, h6 {
-  color: #454360;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-white;
   font-family: $font-family;
   font-weight: $font-bold;
   margin: 20px 0;
@@ -31,7 +36,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 a:hover {
-  color: $color-dark;
+  color: $color-active;
   text-decoration: none;
 }
 a:focus {
@@ -42,7 +47,7 @@ blockquote {
   padding: 20px 20px;
   margin: 0 0 20px;
   font-size: $font-size-normal;
-  background: #F7F7F7;
+  background: #f7f7f7;
   border-radius: 10px;
 }
 
@@ -63,4 +68,8 @@ pre {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 0;
+}
+
+.skill-title {
+  color: $color-dark;
 }

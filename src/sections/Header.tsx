@@ -19,7 +19,7 @@ const Logo = styled.span({
 });
 
 const Dot = styled.span({
-  color: "#ff4c60",
+  color: "#f06000",
   display: "inline",
 });
 
@@ -40,7 +40,7 @@ export class Header extends React.Component<IProps, IState> {
   }
 
   handleScroll = () => {
-    if (window.scrollY < 850) {
+    if (window.scrollY < 600) {
       this.setState({ scroll: false });
     } else {
       this.setState({ scroll: true });

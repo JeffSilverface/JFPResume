@@ -1,38 +1,38 @@
 {
   "username": "Jean-François Pann",
   "avatar": "/images/profile180x180.png",
-  "objective": "<p>Je suis développeur </p> <p></p>",
+  "objective": "<p>Je viens de terminer mon cursus de Développeur Web à l'ENI Ecole de Rennes, j'étais en reconversion professionnelle après 20 années en tant que technicien en électronique.</p> <p>Je suis père de famille de 3 enfants, je réside dans une maison sur Kervignac, j'adore la musique, les balades au fil de l'eau et les voyages.</p>",
   "resumeUrl": "#",
   "skills": [
     {
       "name": "HTML, CSS, Javascript",
       "confidence": 85,
-      "color": "rgb(255, 209, 92)"
+      "color": "#f06000"
     },
     {
       "name": "TypeScript",
       "confidence": 70,
-      "color": "rgb(108, 108, 229)"
-    },
-    {
-      "name": "PostgreSQL, MySQL",
-      "confidence": 80,
-      "color": "rgb(255, 76, 96)"
+      "color": "#f06000"
     },
     {
       "name": "Node JS, Express",
       "confidence": 60,
-      "color": "rgb(255, 76, 96)"
+      "color": "#04334b"
+    },
+    {
+      "name": "PostgreSQL, MySQL",
+      "confidence": 80,
+      "color": "#04334b"
     },
     {
       "name": "PHP 7, Symfony",
       "confidence": 80,
-      "color": "rgb(51, 105, 30)"
+      "color": "#11a2ec"
     },
     {
       "name": "GIT",
       "confidence": 75,
-      "color": "rgb(51, 105, 30)"
+      "color": "#11a2ec"
     }
   ],
   "statistics": [
