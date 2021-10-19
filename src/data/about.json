@@ -1,22 +1,22 @@
 {
   "username": "Jean-François Pann",
   "avatar": "/images/profile180x180.png",
-  "objective": "<p>Je viens de terminer mon cursus de Développeur Web à l'ENI Ecole de Rennes, j'étais en reconversion professionnelle après 20 années en tant que technicien en électronique.</p> <p>Je suis père de famille de 3 enfants, je réside dans une maison sur Kervignac, j'adore la musique, les balades au fil de l'eau et les voyages.</p>",
+  "objective": "<p>Après 20 années technicien en électronique, j'ai décidé de faire une reconversion professionnelle comme développeur web.</p><p>J'ai passé 20 ans à dépanner du matériel professionnel et à réaliser des prestations techniques informatique et de maintenance au 4 coins de la France et à l'étranger. L'expérience acquise me sert aujourd'hui dans ma réflexion et le développement d'applications web</p><p>Je suis à l'écoute de vos projets et serait ravi de mettre mon expérience à votre service.<p/>",
   "resumeUrl": "#",
   "skills": [
     {
       "name": "HTML, CSS, Javascript",
-      "confidence": 85,
+      "confidence": 90,
       "color": "#f06000"
     },
     {
-      "name": "TypeScript",
-      "confidence": 70,
+      "name": "Wordpress",
+      "confidence": 80,
       "color": "#f06000"
     },
     {
       "name": "Node JS, Express",
-      "confidence": 60,
+      "confidence": 70,
       "color": "#04334b"
     },
     {
@@ -38,27 +38,21 @@
   "statistics": [
     {
       "number": 20,
-      "title": "Années d'expériences de technicien",
-      "iconPrefix": "fab",
-      "iconName": "osi"
+      "title": "Années d'expérience de technicien",
+      "iconPrefix": "fas",
+      "iconName": "microchip"
     },
     {
       "number": 43,
-      "title": "Ans",
+      "title": "C'est mon âge",
       "iconPrefix": "fas",
-      "iconName": "tasks"
-    },
-    {
-      "number": 125,
-      "title": "Tasses de thé",
-      "iconPrefix": "fas",
-      "iconName": "coffee"
+      "iconName": "id-badge"
     },
     {
       "number": 2,
       "title": "Projets Publiques Github",
-      "iconPrefix": "far",
-      "iconName": "newspaper"
+      "iconPrefix": "fab",
+      "iconName": "github"
     }
   ]
 }

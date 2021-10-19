@@ -51,11 +51,11 @@ export class About extends React.Component {
           </Col>
         </Row>
 
-        <Row className="mt-5">
+        <Row className="mt-5 alignement">
           {about.statistics.map((statistic) => (
             <Counter
               key={statistic.title}
-              className="col-md-3 col-sm-6"
+              className="col-md-4 col-sm-6"
               description={statistic.title}
               count={statistic.number}
               icon={[

@@ -58,6 +58,19 @@ section {
   .text-center {
     color: $color-primary;
   }
+
+  .alignement {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .color-white {
+    color: $color-white;
+  }
+
+  .fact-item {
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
 }
 
 .section-title {
