@@ -1,36 +1,44 @@
 {
   "tools": [
     {
-      "name": "jquery",
-      "image": "/images/jquery-bw.svg"
+      "name": "Html5 Css3 Javascript",
+      "image": "/images/HTMLCSSJS.png"
     },
     {
-      "name": "html5",
-      "image": "/images/html5-bw.svg"
+      "name": "Node.js",
+      "image": "/images/Node.js.svg"
     },
     {
-      "name": "typescript",
-      "image": "/images/typescript-bw.svg"
+      "name": "React.js",
+      "image": "/images/React.svg"
     },
     {
-      "name": "css3",
-      "image": "/images/css3-bw.svg"
+      "name": "Electron.js",
+      "image": "/images/Electron.svg"
     },
     {
-      "name": "sql server",
-      "image": "/images/sqlserver-bw.svg"
+      "name": "Wordpress",
+      "image": "/images/WordPress.svg"
     },
     {
-      "name": "azure",
-      "image": "/images/azure-bw.svg"
+      "name": "TypeScript",
+      "image": "/images/Typescript.svg"
     },
     {
-      "name": ".net core",
-      "image": "/images/dotnetcore-bw.svg"
+      "name": "Symfony",
+      "image": "/images/Symfony.svg"
     },
     {
-      "name": "graphql",
-      "image": "/images/graphql-bw.svg"
+      "name": "PostgreSQL MySQL",
+      "image": "/images/db.svg"
+    },
+    {
+      "name": "VS Code",
+      "image": "/images/VSCode.svg"
+    },
+    {
+      "name": "Git",
+      "image": "/images/Git.svg"
     }
   ]
 }

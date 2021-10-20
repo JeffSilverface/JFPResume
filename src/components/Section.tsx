@@ -1,13 +1,13 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
+import React from "react";
+import { Container } from "react-bootstrap";
 
 interface Props {
-  id: string
-  title: string
+  id: string;
+  title: string;
 }
 
 export class Section extends React.Component<Props> {
-  render () {
+  render() {
     return (
       <section id={this.props.id}>
         <Container>
@@ -16,8 +16,8 @@ export class Section extends React.Component<Props> {
           {this.props.children}
         </Container>
       </section>
-    )
+    );
   }
 }
 
-export default Section
+export default Section;

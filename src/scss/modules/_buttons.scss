@@ -9,7 +9,7 @@
   font-weight: $font-bold;
   overflow: hidden;
   line-height: 1;
-  padding: 12px 32px;
+  padding: 1rem 2rem;
   position: relative;
 
   &:focus {
@@ -20,35 +20,24 @@
     outline: 0;
   }
 
-  &.disabled, &:disabled {
+  &.disabled,
+  &:disabled {
     opacity: 1;
     cursor: not-allowed;
   }
 }
 
-@keyframes button-push {
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .btn-kd {
   color: $color-white;
+
   background: $color-primary;
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
   &:hover {
     color: $color-white;
-    animation-name: button-push;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+    background: $color-active;
   }
 }

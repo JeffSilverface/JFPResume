@@ -3,22 +3,22 @@
   "services": [
     {
       "title": "Mon propre CV",
-      "photo": "/images/EfedusWareLauncher192x113.png",
-      "backgroundColor": "rgb(108, 108, 229)",
+      "photo": "/images/JFPCV192x95.png",
+      "backgroundColor": "#021822",
       "content": "Création de mon CV afin de présenter mes compétences et mon savoir faire. ",
       "delay": 0
     },
     {
       "title": "Launcher EfedusWare",
       "photo": "/images/EfedusWareLauncher192x113.png",
-      "backgroundColor": "rgb(249, 215, 76)",
+      "backgroundColor": "#021822",
       "content": "Développement d'une application Electron JS en Typescript avec React. (code source non disponible)",
       "delay": 750
     },
     {
       "title": "Site Web EfedusWare",
       "photo": "/images/EfedusWareWebsite192x95.png",
-      "backgroundColor": "rgb(249, 215, 76)",
+      "backgroundColor": "#021822",
       "content": "Développement en Typescript d'un Back-end Node et d'un Front-End React. (code source non disponible)",
       "delay": 1500
     }

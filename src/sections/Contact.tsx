@@ -1,67 +1,51 @@
 import React from "react";
 import { Section } from "../components";
-import { Row, Col, Button, Form } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import contact from "../data/contact.json";
+import mailgo, { MailgoConfig } from "mailgo";
+
+const mailgoConfig: MailgoConfig = {
+  lang: "fr",
+  showFooter: false,
+  actions: { skype: false, whatsapp: false },
+};
 
 export class Contact extends React.Component {
+  componentDidMount() {
+    mailgo(mailgoConfig);
+  }
+
   render() {
     return (
       <Section id="contact" title="Gardons contact">
         <Row>
-          <Col md={4}>
+          <Col md={8}>
             <div className="contact-info">
-              <h3>{contact.title}</h3>
-              <div dangerouslySetInnerHTML={{ __html: contact.subTitle }} />
+              <h3 dangerouslySetInnerHTML={{ __html: contact.title }} />
             </div>
           </Col>
-          <Col md={8}>
+          <Col md={4}>
             <Row>
-              <Col md={6}>
-                <Form.Group controlId="inputName">
-                  <Form.Control
-                    type="text"
-                    className="kd-form-control"
-                    placeholder="Votre nom"
-                  />
-                </Form.Group>
-              </Col>
-              <Col md={6}>
-                <Form.Group controlId="inputEmail">
-                  <Form.Control
-                    type="email"
-                    className="kd-form-control"
-                    placeholder="Votre adresse Email"
-                  />
-                </Form.Group>
-              </Col>
+              Redigez un
+              <a
+                className="App-link"
+                href="mailto:jfpann@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                mail
+              </a>
             </Row>
             <Row>
-              <Col md={12}>
-                <Form.Group controlId="inputSubject">
-                  <Form.Control
-                    type="text"
-                    className="kd-form-control"
-                    placeholder="Objet"
-                  />
-                </Form.Group>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={12}>
-                <Form.Group controlId="inputMessage">
-                  <Form.Control
-                    as="textarea"
-                    rows={5}
-                    className="kd-form-control"
-                    placeholder="Message"
-                  />
-                </Form.Group>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={12}>
-                <Button variant="kd">Envoyer le message</Button>
-              </Col>
+              contactez moi par <br />
+              <a
+                className="App-link"
+                href="tel:06 82 65 02 85"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Téléphone
+              </a>
             </Row>
           </Col>
         </Row>

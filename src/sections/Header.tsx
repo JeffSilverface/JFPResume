@@ -80,7 +80,7 @@ export class Header extends React.Component<IProps, IState> {
                   </Scroller>
                 </Nav.Item>
                 <Nav.Item as="li">
-                  <Scroller href="#education" className="nav-link">
+                  <Scroller href="#services" className="nav-link">
                     Parcours
                   </Scroller>
                 </Nav.Item>

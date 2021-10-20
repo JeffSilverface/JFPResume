@@ -7,9 +7,6 @@ section {
   position: relative;
 
   &.about {
-    // background: url(/images/Dune.jpg);
-    background: red;
-
     padding: 0;
     height: 100vh;
     min-height: 100vh;
@@ -71,6 +68,47 @@ section {
   .fact-item {
     margin: 0 0.5rem 2rem 0.5rem;
   }
+}
+
+#education,
+#experience {
+  h2 {
+    color: $color-dark;
+  }
+
+  h3 {
+    color: $color-active;
+  }
+  margin-bottom: 3rem;
+}
+
+#services {
+  h2 {
+    color: $color-dark;
+  }
+}
+
+#recommendations {
+  background: $color-light;
+  min-height: 100vh;
+}
+
+#contact {
+  min-height: calc(100vh - 217px);
+  h2 {
+    color: $color-primary;
+  }
+  h3 {
+    color: $color-active;
+  }
+}
+
+.icons {
+  max-height: 50px;
+}
+
+.item p {
+  padding: 0.5rem 0 1.5rem 0;
 }
 
 .section-title {

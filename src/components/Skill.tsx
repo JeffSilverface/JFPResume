@@ -1,40 +1,40 @@
-import React from 'react'
-import VisibilitySensor from 'react-visibility-sensor'
+import React from "react";
+import VisibilitySensor from "react-visibility-sensor";
 
 interface Props {
-  title: string
-  percent: number
-  backgroundColor?: string
+  title: string;
+  percent: number;
+  backgroundColor?: string;
 }
 
 interface State {
-  completed: number
-  loaded: boolean
+  completed: number;
+  loaded: boolean;
 }
 
 export class Skill extends React.Component<Props, State> {
-  constructor (props: Props) {
-    super(props)
+  constructor(props: Props) {
+    super(props);
 
     this.state = {
       completed: 0,
-      loaded: false
-    }
+      loaded: false,
+    };
   }
 
   onChange = (isVisible: boolean) => {
     if (isVisible && !this.state.loaded) {
       this.setState({
         completed: this.props.percent,
-        loaded: true
-      })
+        loaded: true,
+      });
     }
-  }
+  };
 
-  render () {
-    const props = this.props
+  render() {
+    const props = this.props;
 
-    const bgColor = props.backgroundColor ? props.backgroundColor : '#f1f1f1'
+    const bgColor = props.backgroundColor ? props.backgroundColor : "#f1f1f1";
 
     return (
       <div className="skill-item mb-4">
@@ -45,11 +45,17 @@ export class Skill extends React.Component<Props, State> {
           </div>
         </VisibilitySensor>
         <div className="progress">
-          <div className="progress-bar data-background" style={{ width: `${this.state.completed}%`, backgroundColor: `${bgColor}` }} />
+          <div
+            className="progress-bar data-background"
+            style={{
+              width: `${this.state.completed}%`,
+              backgroundColor: `${bgColor}`,
+            }}
+          />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Skill
+export default Skill;

@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import { Row, Col } from "react-bootstrap";
-import { Skill, Counter, Section } from "../components";
-import { IconPrefix, IconName } from "@fortawesome/fontawesome-svg-core";
-import about from "../data/about.json";
+import React from 'react'
+import styled from 'styled-components'
+import { Row, Col } from 'react-bootstrap'
+import { Skill, Counter, Section } from '../components'
+import { IconPrefix, IconName } from '@fortawesome/fontawesome-svg-core'
+import about from '../data/about.json'
 
 const Name = styled.div`
   font-weight: 500;
   font-size: 18px;
-`;
+`
 export class About extends React.Component {
-  render() {
+  render () {
     return (
       <Section id="about" title="A propos de moi">
         <Row>
@@ -21,7 +21,7 @@ export class About extends React.Component {
                   <img
                     src={about.avatar}
                     alt="jf.pann"
-                    style={{ width: "150px" }}
+                    style={{ width: '150px' }}
                   />
                 </div>
               </Col>
@@ -60,14 +60,14 @@ export class About extends React.Component {
               count={statistic.number}
               icon={[
                 statistic.iconPrefix as IconPrefix,
-                statistic.iconName as IconName,
+                statistic.iconName as IconName
               ]}
             />
           ))}
         </Row>
       </Section>
-    );
+    )
   }
 }
 
-export default About;
+export default About

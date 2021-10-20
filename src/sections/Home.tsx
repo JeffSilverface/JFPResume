@@ -1,35 +1,30 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import TextLoop from "react-text-loop";
-import styled from "styled-components";
-import { Scroller } from "../components";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import details from "../data/details.json";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import TextLoop from 'react-text-loop'
+import styled from 'styled-components'
+import { Scroller } from '../components'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import details from '../data/details.json'
 
 const Dot = styled.div({
-  color: "#f06000",
-  display: "inline",
-});
+  color: '#f06000',
+  display: 'inline'
+})
 
 export class Home extends React.Component {
-  render() {
+  render () {
     return (
       <section id="home" className="home d-flex align-items-center">
         <Container>
           <div className="intro">
-            {/* <img
-              src={details.avatar}
-              alt="Jean-François Pann"
-              className="mb-4"
-            /> */}
             <h1 className="mb-2 mt-0">
               {details.fullFirstName}
               <Dot>{details.middleName}</Dot>
               {details.lastName}
             </h1>
             <span>
-              Je suis{" "}
+              Je suis{' '}
               <TextLoop
                 springConfig={{ stiffness: 180, damping: 10 }}
                 interval={2000}
@@ -68,8 +63,8 @@ export class Home extends React.Component {
           </div>
         </Container>
       </section>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
