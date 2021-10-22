@@ -6,12 +6,12 @@
   "skills": [
     {
       "name": "HTML, CSS, Javascript",
-      "confidence": 90,
+      "confidence": 85,
       "color": "#f06000"
     },
     {
-      "name": "Wordpress",
-      "confidence": 80,
+      "name": "React, Wordpress",
+      "confidence": 90,
       "color": "#f06000"
     },
     {
@@ -27,12 +27,12 @@
     {
       "name": "PHP 7, Symfony",
       "confidence": 80,
-      "color": "#11a2ec"
+      "color": "#3f87a6"
     },
     {
       "name": "GIT",
       "confidence": 75,
-      "color": "#11a2ec"
+      "color": "#3f87a6"
     }
   ],
   "statistics": [

@@ -1,30 +1,32 @@
-import React from 'react'
-import { Section, ServiceBox } from '../components'
-import { Row, Col } from 'react-bootstrap'
-import ServiceConfig from '../data/services.json'
+import React from "react";
+import { Section, ServiceBox } from "../components";
+import { Row, Col } from "react-bootstrap";
+import ServiceConfig from "../data/services.json";
 
-const services = ServiceConfig.services
+const services = ServiceConfig.services;
 
-const Pulse = require('react-reveal/Pulse')
+const Pulse = require("react-reveal/Pulse");
 
 export class Services extends React.Component {
-  render () {
+  render() {
     return (
       <Section id="services" title="Projets réalisés">
         <Row>
           {services.map((s) => (
             <Col md={4} key={s.title}>
               <Pulse delay={s.delay}>
-                <ServiceBox
-                  title={s.title}
-                  image={s.photo}
-                  backgroundColor={s.backgroundColor}
-                >
-                  <div
-                    className="mb-0"
-                    dangerouslySetInnerHTML={{ __html: s.content }}
-                  />
-                </ServiceBox>
+                <a href={s.link} target="_blank" rel="noopener noreferrer">
+                  <ServiceBox
+                    title={s.title}
+                    image={s.photo}
+                    backgroundColor={s.backgroundColor}
+                  >
+                    <div
+                      className="mb-0"
+                      dangerouslySetInnerHTML={{ __html: s.content }}
+                    />
+                  </ServiceBox>
+                </a>
               </Pulse>
             </Col>
           ))}
@@ -35,15 +37,15 @@ export class Services extends React.Component {
               <div
                 className="mb-0"
                 dangerouslySetInnerHTML={{
-                  __html: ServiceConfig.customContent
+                  __html: ServiceConfig.customContent,
                 }}
               />
             </div>
           </Col>
         </Row>
       </Section>
-    )
+    );
   }
 }
 
-export default Services
+export default Services;

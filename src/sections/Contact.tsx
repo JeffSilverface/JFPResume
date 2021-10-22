@@ -1,8 +1,17 @@
 import React from "react";
 import { Section } from "../components";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import contact from "../data/contact.json";
 import mailgo, { MailgoConfig } from "mailgo";
+import { Formik, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
+
+interface FormValues {
+  Name: string;
+  Email: string;
+  Subject: string;
+  Message: string;
+}
 
 const mailgoConfig: MailgoConfig = {
   lang: "fr",
@@ -10,43 +19,130 @@ const mailgoConfig: MailgoConfig = {
   actions: { skype: false, whatsapp: false },
 };
 
+const CustomErrors = (props: any) => {
+  const { children } = props;
+  return <div className="input-errors">{children}</div>;
+};
+
+const CustomInput = ({ field, form, ...props }: any) => {
+  return (
+    <div>
+      <div>
+        <ErrorMessage name={field.name} component={CustomErrors} />
+      </div>
+      {props.type === "textarea" && (
+        <textarea {...field} {...props} id={field.name} type={props.type} />
+      )}
+      {props.type !== "textarea" && (
+        <div>
+          <input {...field} {...props} id={field.name} type={props.type} />
+        </div>
+      )}
+    </div>
+  );
+};
+
 export class Contact extends React.Component {
   componentDidMount() {
     mailgo(mailgoConfig);
   }
 
+  sendMessage = (values: FormValues) => {
+    console.log(values);
+  };
+
+  initialValues: FormValues = {
+    Name: "",
+    Email: "",
+    Subject: "",
+    Message: "",
+  };
+
+  userSchema = Yup.object().shape({
+    Name: Yup.string().required("Comment vous appelez vous ?"),
+    Email: Yup.string()
+      .email("Format d'Email incorrect.")
+      .required("un email = une réponse."),
+    Subject: Yup.string().required("Avec un petit objet c'est plus sympa."),
+    Message: Yup.string().required("Laissez moi un petit mot."),
+  });
+
   render() {
     return (
       <Section id="contact" title="Gardons contact">
         <Row>
-          <Col md={8}>
+          <Col md={4}>
             <div className="contact-info">
               <h3 dangerouslySetInnerHTML={{ __html: contact.title }} />
+              <div dangerouslySetInnerHTML={{ __html: contact.subTitle }} />
             </div>
           </Col>
-          <Col md={4}>
-            <Row>
-              Redigez un
-              <a
-                className="App-link"
-                href="mailto:jfpann@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                mail
-              </a>
-            </Row>
-            <Row>
-              contactez moi par <br />
-              <a
-                className="App-link"
-                href="tel:06 82 65 02 85"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Téléphone
-              </a>
-            </Row>
+          <Col md={8}>
+            <Formik
+              onSubmit={this.sendMessage}
+              initialValues={this.initialValues}
+              validateOnChange={false}
+              validationSchema={this.userSchema}
+            >
+              {({ handleSubmit, isSubmitting }) => (
+                <form onSubmit={handleSubmit}>
+                  <Row>
+                    <Col md={6}>
+                      <Field
+                        className="kd-form-control"
+                        type="text"
+                        name="Name"
+                        component={CustomInput}
+                        placeholder="Vos noms et prénoms"
+                      />
+                    </Col>
+                    <Col md={6}>
+                      <Field
+                        className="kd-form-control"
+                        type="Email"
+                        name="Email"
+                        component={CustomInput}
+                        placeholder="Votre email"
+                      />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      <Field
+                        className="kd-form-control"
+                        type="text"
+                        name="Subject"
+                        component={CustomInput}
+                        placeholder="Objet du message"
+                      />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      <Field
+                        className="kd-form-control textarea"
+                        type="textarea"
+                        name="Message"
+                        component={CustomInput}
+                        placeholder="Message"
+                      />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={12}>
+                      <div>
+                        <input
+                          className="btn btn-kd"
+                          type="submit"
+                          value="Envoyer le message"
+                          disabled={isSubmitting}
+                        />
+                      </div>
+                    </Col>
+                  </Row>
+                </form>
+              )}
+            </Formik>
           </Col>
         </Row>
       </Section>

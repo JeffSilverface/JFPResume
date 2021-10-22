@@ -17,7 +17,7 @@ export class ServiceBox extends React.Component<Props> {
     `;
 
     return (
-      <Wrapper className="service-box rounded data-background padding-30 text-center text-light shadow-blue mb-4">
+      <Wrapper className="service-box rounded data-background padding-30 text-center text-light mb-4">
         <img
           style={{ maxHeight: "95px" }}
           src={props.image}

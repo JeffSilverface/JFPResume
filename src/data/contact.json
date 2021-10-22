@@ -1,4 +1,4 @@
 {
-  "title": "<p>Vous avez un projet en tête ?</p> <p>Collaborons et construisons quelque chose de génial.</p> <p>Transformons votre idée en un produit concret.</p>",
-  "subTitle": "Ecrivez moi un  <a href=\"mailto:jfpann@gmail.com\">email</a>. <span role=\"img\" aria-label=\"wave\">👋</span>"
+  "title": "<p>Vous avez une idée ou un projet en tête ?</p> <p>Collaborons et concrétisons votre projet.</p> <p>Transformons votre idée en un super produit.</p>",
+  "subTitle": "Ecrivez moi un  <a className=\"App-link\" href=\"mailto:jfpann@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">Email</a> ou servez vous du formulaire. <span role=\"img\" aria-label=\"wave\">👋</span>"
 }

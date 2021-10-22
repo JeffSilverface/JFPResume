@@ -49,7 +49,7 @@ section {
 }
 
 #about {
-  background: $color-bck-dark;
+  background: linear-gradient(0.25turn, $color-bck-dark, $color-light);
   min-height: 100vh;
 
   .text-center {
@@ -89,14 +89,14 @@ section {
 }
 
 #recommendations {
-  background: $color-light;
+  background: linear-gradient(0.25turn, $color-bck-dark, $color-light);
   min-height: 100vh;
 }
 
 #contact {
   min-height: calc(100vh - 217px);
   h2 {
-    color: $color-primary;
+    color: $color-dark;
   }
   h3 {
     color: $color-active;
