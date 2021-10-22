@@ -5,6 +5,7 @@ import contact from "../data/contact.json";
 import mailgo, { MailgoConfig } from "mailgo";
 import { Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import sendMail from "services/sendMail";
 
 interface FormValues {
   Name: string;
@@ -47,8 +48,10 @@ export class Contact extends React.Component {
     mailgo(mailgoConfig);
   }
 
-  sendMessage = (values: FormValues) => {
+  sendMessage = async (values: FormValues, actions: any) => {
+    await sendMail(values);
     console.log(values);
+    actions.isSubmitting = false;
   };
 
   initialValues: FormValues = {

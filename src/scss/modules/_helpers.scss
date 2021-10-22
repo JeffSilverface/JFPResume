@@ -64,7 +64,13 @@
     color: $color-white;
   }
 }
-
+.navbar-nav {
+  li {
+    &:not(:last-child) {
+      padding-left: 3rem;
+    }
+  }
+}
 .mouse {
   border: solid 2px $color-white;
   border-radius: 16px;

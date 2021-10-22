@@ -8,6 +8,8 @@ interface IProps {}
 
 interface IState {
   scroll: boolean;
+  expanded: boolean;
+  transparency: boolean;
 }
 
 const Logo = styled.span({
@@ -28,6 +30,8 @@ export class Header extends React.Component<IProps, IState> {
     super(props);
     this.state = {
       scroll: false,
+      expanded: false,
+      transparency: true,
     };
   }
 
@@ -40,10 +44,29 @@ export class Header extends React.Component<IProps, IState> {
   }
 
   handleScroll = () => {
-    if (window.scrollY < 600) {
-      this.setState({ scroll: false });
+    if (window.scrollY === 0) {
+      this.setState({ transparency: true });
+    }
+    if (this.state.transparency && window.scrollY < 600) {
+      this.setState({ scroll: false, transparency: true });
     } else {
       this.setState({ scroll: true });
+    }
+  };
+
+  handleClickToggle = () => {
+    this.setState({
+      expanded: !this.state.expanded,
+      scroll: true,
+      transparency: false,
+    });
+  };
+
+  handleClickLink = () => {
+    if (window.innerWidth <= 992) {
+      this.setState({
+        expanded: !this.state.expanded,
+      });
     }
   };
 
@@ -58,7 +81,7 @@ export class Header extends React.Component<IProps, IState> {
         onScroll={this.handleScroll}
       >
         <Container>
-          <Navbar expand="lg" variant="dark">
+          <Navbar expand="lg" variant="dark" expanded={this.state.expanded}>
             <Navbar.Brand href="#">
               <Logo>
                 {details.firstName}
@@ -66,30 +89,33 @@ export class Header extends React.Component<IProps, IState> {
                 {details.lastName}
               </Logo>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarNavDropdown" />
+            <Navbar.Toggle
+              aria-controls="navbarNavDropdown"
+              onClick={this.handleClickToggle}
+            />
             <Navbar.Collapse id="navbarNavDropdown">
               <Nav className="ml-auto" as="ul">
-                <Nav.Item as="li">
+                <Nav.Item as="li" onClick={this.handleClickLink}>
                   <Scroller href="#home" className="nav-link">
                     Accueil
                   </Scroller>
                 </Nav.Item>
-                <Nav.Item as="li">
+                <Nav.Item as="li" onClick={this.handleClickLink}>
                   <Scroller href="#about" className="nav-link">
                     A propos de moi
                   </Scroller>
                 </Nav.Item>
-                <Nav.Item as="li">
+                <Nav.Item as="li" onClick={this.handleClickLink}>
                   <Scroller href="#services" className="nav-link">
                     Parcours
                   </Scroller>
                 </Nav.Item>
-                <Nav.Item as="li">
+                <Nav.Item as="li" onClick={this.handleClickLink}>
                   <Scroller href="#recommendations" className="nav-link">
                     Recommandations
                   </Scroller>
                 </Nav.Item>
-                <Nav.Item as="li">
+                <Nav.Item as="li" onClick={this.handleClickLink}>
                   <Scroller href="#contact" className="nav-link">
                     Contact
                   </Scroller>
