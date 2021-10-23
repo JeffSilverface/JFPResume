@@ -50,7 +50,6 @@ export class Contact extends React.Component {
 
   sendMessage = async (values: FormValues, actions: any) => {
     await sendMail(values);
-    console.log(values);
     actions.isSubmitting = false;
   };
 
