@@ -4,3 +4,5 @@ export { ServiceBox } from "./ServiceBox";
 export { Skill } from "./Skill";
 export { Timeline } from "./Timeline";
 export { Scroller } from "./Scroller";
+export { Validation } from "./Validation";
+export { Loader } from "./Loader";

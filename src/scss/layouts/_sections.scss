@@ -116,3 +116,31 @@ section {
   margin: 0;
   position: relative;
 }
+
+.display {
+  display: none;
+}
+
+.validation {
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(4px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+
+  .box {
+    background-color: $color-dark;
+    color: $color-white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    margin: auto auto;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

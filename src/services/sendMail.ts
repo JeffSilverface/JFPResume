@@ -13,7 +13,7 @@ const sendMail = async (values: FormValues) => {
     .catch((e) => {
       throw e;
     });
-  console.log("response", response);
+  return response.data;
 };
 
 export default sendMail;

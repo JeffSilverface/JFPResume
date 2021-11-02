@@ -7,6 +7,16 @@ import { Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import sendMail from "services/sendMail";
 
+interface MyProps {
+  formState: {
+    sendingMail: boolean;
+    mailSent: boolean;
+    displayBox: boolean;
+    resetForm: boolean;
+  };
+  setFormState: any;
+}
+
 interface FormValues {
   Name: string;
   Email: string;
@@ -43,15 +53,10 @@ const CustomInput = ({ field, form, ...props }: any) => {
   );
 };
 
-export class Contact extends React.Component {
+export class Contact extends React.Component<MyProps> {
   componentDidMount() {
     mailgo(mailgoConfig);
   }
-
-  sendMessage = async (values: FormValues, actions: any) => {
-    await sendMail(values);
-    actions.isSubmitting = false;
-  };
 
   initialValues: FormValues = {
     Name: "",
@@ -68,6 +73,23 @@ export class Contact extends React.Component {
     Subject: Yup.string().required("Avec un petit objet c'est plus sympa."),
     Message: Yup.string().required("Laissez moi un petit mot."),
   });
+
+  sendMessage = async (values: FormValues, actions: any) => {
+    console.log("action", actions);
+    const { setFormState } = this.props;
+    setFormState("sending");
+    const result = await sendMail(values);
+
+    if (result) {
+      setFormState("ok");
+    } else {
+      setFormState("nok");
+    }
+    if (this.props.formState.resetForm) {
+      actions.resetForm({});
+    }
+    actions.isSubmitting = false;
+  };
 
   render() {
     return (

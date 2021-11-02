@@ -1,10 +1,18 @@
 import React from "react";
-import { Scroller } from "../components";
+import { Scroller, Validation } from "../components";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import styled from "styled-components";
 import details from "../data/details.json";
 
-interface IProps {}
+interface IProps {
+  formState: {
+    sendingMail: boolean;
+    mailSent: boolean;
+    displayBox: boolean;
+    resetForm: boolean;
+  };
+  setFormState: any;
+}
 
 interface IState {
   scroll: boolean;
@@ -81,6 +89,10 @@ export class Header extends React.Component<IProps, IState> {
         onScroll={this.handleScroll}
       >
         <Container>
+          <Validation
+            formState={this.props.formState}
+            setFormState={this.props.setFormState}
+          />
           <Navbar expand="lg" variant="dark" expanded={this.state.expanded}>
             <Navbar.Brand href="#">
               <Logo>
