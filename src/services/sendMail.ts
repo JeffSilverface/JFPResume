@@ -9,7 +9,7 @@ interface FormValues {
 
 const sendMail = async (values: FormValues) => {
   const response = await axios
-    .post("http://localhost:5000/mail", values)
+    .post("https://jfpann.herokuapp.com/mail", values)
     .catch((e) => {
       throw e;
     });

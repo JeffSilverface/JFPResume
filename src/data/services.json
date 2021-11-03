@@ -3,7 +3,7 @@
   "services": [
     {
       "title": "Mon propre CV",
-      "photo": "/images/JFPCV192x95.png",
+      "photo": "/images/JFPCV192x95.webp",
       "backgroundColor": "#021822",
       "content": "Création de mon CV afin de présenter mes compétences et mon savoir faire. (voir github) ",
       "link": "https://github.com/JeffSilverface/JFPResume",
@@ -11,7 +11,7 @@
     },
     {
       "title": "Launcher EfedusWare",
-      "photo": "/images/EfedusWareLauncher192x113.png",
+      "photo": "/images/EfedusWareLauncher192x113.webp",
       "backgroundColor": "#021822",
       "content": "Développement d'une application Electron JS en Typescript avec React. (code source non disponible)",
       "link": "https://www.youtube.com/watch?v=tBLBWazUf1k&ab_channel=JFSilverface",
@@ -19,7 +19,7 @@
     },
     {
       "title": "Site Web EfedusWare",
-      "photo": "/images/EfedusWareWebsite192x95.png",
+      "photo": "/images/EfedusWareWebsite192x95.webp",
       "backgroundColor": "#021822",
       "content": "Développement en Typescript d'un Back-end Node et d'un Front-End React. (code source non disponible)",
       "link": "https://www.youtube.com/watch?v=D8DVy031ArA&ab_channel=JFSilverface",

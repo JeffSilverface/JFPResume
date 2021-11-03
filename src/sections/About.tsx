@@ -18,11 +18,7 @@ export class About extends React.Component {
             <Row>
               <Col md={12}>
                 <div className="text-center mb-3">
-                  <img
-                    src={about.avatar}
-                    alt="jf.pann"
-                    style={{ width: "150px" }}
-                  />
+                  <img src={about.avatar} alt="jf.pann" />
                 </div>
               </Col>
               <Col md={12}>

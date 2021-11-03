@@ -41,7 +41,6 @@ class App extends React.Component<IProps, IState> {
   }
 
   setFormState = (action: string) => {
-    console.log(action);
     if (action === "sending") {
       this.setState({
         formState: {

@@ -14,7 +14,7 @@ section {
 }
 
 #home {
-  background: url(/images/Dune.jpg);
+  background: url(/images/Dune.webp);
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -51,6 +51,11 @@ section {
 #about {
   background: linear-gradient(0.25turn, $color-bck-dark, $color-light);
   min-height: 100vh;
+
+  img {
+    width: 150px;
+    heigth: 150px;
+  }
 
   .text-center {
     color: $color-primary;
@@ -142,5 +147,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
   }
 }

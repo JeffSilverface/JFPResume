@@ -75,7 +75,6 @@ export class Contact extends React.Component<MyProps> {
   });
 
   sendMessage = async (values: FormValues, actions: any) => {
-    console.log("action", actions);
     const { setFormState } = this.props;
     setFormState("sending");
     const result = await sendMail(values);

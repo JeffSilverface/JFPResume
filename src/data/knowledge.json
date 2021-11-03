@@ -2,7 +2,7 @@
   "tools": [
     {
       "name": "Html5 Css3 Javascript",
-      "image": "/images/HTMLCSSJS.png"
+      "image": "/images/HTMLCSSJS.webp"
     },
     {
       "name": "Node.js",
@@ -34,7 +34,7 @@
     },
     {
       "name": "VS Code",
-      "image": "/images/VSCode.svg"
+      "image": "/images/VS.svg"
     },
     {
       "name": "Git",
