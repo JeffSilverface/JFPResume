@@ -1,3 +1,5 @@
+link to the final render : https://jfpann.herokuapp.com/
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/) (the most recent LTS version)
@@ -29,12 +31,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-TLDR: The production needs to be run on a server although it does not contains server side script. This is because the build created filenames with the hashes and `%PUBLIC_URL%` paths. You might be interested in setting up a static server for testing the production. For environments using Node, the easiest way to handle this would be to install [serve](https://github.com/zeit/serve) and let it handle the rest:
-
-```
-yarn global add serve
-serve -s build
-```
