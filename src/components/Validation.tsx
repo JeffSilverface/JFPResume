@@ -30,9 +30,9 @@ export class Validation extends React.Component<MyInterface> {
         ) : (
           <div className="box">
             {this.props.formState.mailSent ? (
-              <>{contact.mailOk}</>
+              <span dangerouslySetInnerHTML={{ __html: contact.mailOk }} />
             ) : (
-              <>{contact.mailNok}</>
+              <span dangerouslySetInnerHTML={{ __html: contact.mailNok }} />
             )}
             <p className="btn btn-kd" onClick={this.closeWindow}>
               OK
