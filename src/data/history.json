@@ -28,6 +28,12 @@
   "career": [
     {
       "period": "2021",
+      "company": "Kervignac Digital à Kervignac",
+      "title": "Développeur web",
+      "description": "Société de service web"
+    },
+    {
+      "period": "2021",
       "company": "EfedusWare à Lorient",
       "title": "Développeur web en stage",
       "description": ""

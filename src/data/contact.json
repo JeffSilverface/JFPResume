@@ -1,4 +1,6 @@
 {
   "title": "<p>Vous avez une idée ou un projet en tête ?</p> <p>Collaborons et concrétisons votre projet.</p> <p>Transformons votre idée en un super produit.</p>",
-  "subTitle": "Ecrivez moi un  <a className=\"App-link\" href=\"mailto:jfpann@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">Email</a> ou servez vous du formulaire. <span role=\"img\" aria-label=\"wave\">👋</span>"
+  "subTitle": "Ecrivez moi un  <a className=\"App-link\" href=\"mailto:jfpann@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\">Email</a> ou servez vous du formulaire. <span role=\"img\" aria-label=\"wave\">👋</span>",
+  "mailOk": "<p>Votre demande a bien été prise en compte.</p><p>Vous allez recevoir un email de confirmation.</p>",
+  "mailNok": "<p>Echec de l'envoi du formulaire.</p><p>Envoyez moi un{\" \"}<a className=\"App-link\" href=\"mailto:jfpann@gmail.com\" target=\"_blank\" rel=\"noopener noreferrer\" onClick={this.closeWindow} >Email</a>{\" \"} directement.</p>"
 }

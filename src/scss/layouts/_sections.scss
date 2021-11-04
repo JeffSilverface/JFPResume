@@ -96,6 +96,10 @@ section {
 #recommendations {
   background: linear-gradient(0.25turn, $color-bck-dark, $color-light);
   min-height: 100vh;
+
+  .subtitle {
+    color: $color-white;
+  }
 }
 
 #contact {

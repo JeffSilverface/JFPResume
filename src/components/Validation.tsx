@@ -1,5 +1,6 @@
 import React from "react";
 import { Loader } from "./";
+import contact from "../data/contact.json";
 
 interface MyInterface {
   formState: {
@@ -29,27 +30,9 @@ export class Validation extends React.Component<MyInterface> {
         ) : (
           <div className="box">
             {this.props.formState.mailSent ? (
-              <>
-                <p>La demande à bien été prise en compte.</p>
-                <p>Vous aller recevoir un email de confirmation.</p>
-              </>
+              <>{contact.mailOk}</>
             ) : (
-              <>
-                <p>Echec de l'envoi du formulaire.</p>
-                <p>
-                  Envoyez moi un{" "}
-                  <a
-                    className="App-link"
-                    href="mailto:jfpann@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={this.closeWindow}
-                  >
-                    Email
-                  </a>{" "}
-                  directement.
-                </p>
-              </>
+              <>{contact.mailNok}</>
             )}
             <p className="btn btn-kd" onClick={this.closeWindow}>
               OK
