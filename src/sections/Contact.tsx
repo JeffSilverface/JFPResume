@@ -116,7 +116,7 @@ export class Contact extends React.Component<MyProps> {
                         type="text"
                         name="Name"
                         component={CustomInput}
-                        placeholder="Vos noms et prénoms"
+                        placeholder="Vos nom et prénom"
                       />
                     </Col>
                     <Col md={6}>
