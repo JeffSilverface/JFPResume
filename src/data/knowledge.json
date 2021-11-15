@@ -2,43 +2,58 @@
   "tools": [
     {
       "name": "Html5 Css3 Javascript",
-      "image": "/images/HTMLCSSJS.webp"
+      "image": "/images/HTMLCSSJS.webp",
+      "link": "https://developer.mozilla.org/fr/docs/Web/HTML"
     },
     {
       "name": "Node.js",
-      "image": "/images/Node.js.svg"
+      "image": "/images/Node.js.svg",
+      "link": "https://nodejs.org/en/"
     },
     {
       "name": "React.js",
-      "image": "/images/React.svg"
+      "image": "/images/React.svg",
+      "link": "https://fr.reactjs.org/"
     },
     {
       "name": "Electron.js",
-      "image": "/images/Electron.svg"
+      "image": "/images/Electron.svg",
+      "link": "https://www.electronjs.org/"
     },
     {
       "name": "Wordpress",
-      "image": "/images/WordPress.svg"
+      "image": "/images/WordPress.svg",
+      "link": "https://fr.wordpress.org/"
     },
     {
       "name": "TypeScript",
-      "image": "/images/Typescript.svg"
+      "image": "/images/Typescript.svg",
+      "link": "https://www.typescriptlang.org/"
     },
     {
       "name": "Symfony",
-      "image": "/images/Symfony.svg"
+      "image": "/images/Symfony.svg",
+      "link": "https://symfony.com/"
     },
     {
-      "name": "PostgreSQL MySQL",
-      "image": "/images/db.svg"
+      "name": "PostgreSQL",
+      "image": "/images/db.svg",
+      "link": "https://www.postgresql.org/"
+    },
+    {
+      "name": "MySQL",
+      "image": "/images/MySQL.svg",
+      "link": "https://www.mysql.com/fr/"
     },
     {
       "name": "VS Code",
-      "image": "/images/VS.svg"
+      "image": "/images/VS.svg",
+      "link": "https://code.visualstudio.com/"
     },
     {
       "name": "Git",
-      "image": "/images/Git.svg"
+      "image": "/images/Git.svg",
+      "link": "https://git-scm.com/"
     }
   ]
 }

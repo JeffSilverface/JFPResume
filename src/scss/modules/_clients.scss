@@ -17,6 +17,9 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
+    a {
+      color: $color-white;
+    }
   }
 
   img {

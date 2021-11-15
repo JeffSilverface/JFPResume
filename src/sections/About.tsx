@@ -48,18 +48,37 @@ export class About extends React.Component {
         </Row>
 
         <Row className="mt-5 alignement">
-          {about.statistics.map((statistic) => (
-            <Counter
-              key={statistic.title}
-              className="col-md-4 col-sm-6"
-              description={statistic.title}
-              count={statistic.number}
-              icon={[
-                statistic.iconPrefix as IconPrefix,
-                statistic.iconName as IconName,
-              ]}
-            />
-          ))}
+          {about.statistics.map((statistic) =>
+            statistic.link ? (
+              <a
+                className="col-md-4 col-sm-6"
+                href={statistic.link ? statistic.link : "#about"}
+                key={statistic.title}
+                target={statistic.link ? "_blank" : ""}
+              >
+                <Counter
+                  key={statistic.title}
+                  description={statistic.title}
+                  count={statistic.number}
+                  icon={[
+                    statistic.iconPrefix as IconPrefix,
+                    statistic.iconName as IconName,
+                  ]}
+                />
+              </a>
+            ) : (
+              <Counter
+                className="col-md-4 col-sm-6"
+                key={statistic.title}
+                description={statistic.title}
+                count={statistic.number}
+                icon={[
+                  statistic.iconPrefix as IconPrefix,
+                  statistic.iconName as IconName,
+                ]}
+              />
+            )
+          )}
         </Row>
       </Section>
     );

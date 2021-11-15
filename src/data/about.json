@@ -40,19 +40,22 @@
       "number": 20,
       "title": "Années d'expérience de technicien",
       "iconPrefix": "fas",
-      "iconName": "microchip"
+      "iconName": "microchip",
+      "link": ""
     },
     {
       "number": 43,
       "title": "C'est mon âge",
       "iconPrefix": "fas",
-      "iconName": "id-badge"
+      "iconName": "id-badge",
+      "link": ""
     },
     {
       "number": 2,
       "title": "Projets Publics Github",
       "iconPrefix": "fab",
-      "iconName": "github"
+      "iconName": "github",
+      "link": "https://github.com/JeffSilverface"
     }
   ]
 }

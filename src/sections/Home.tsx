@@ -1,19 +1,19 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import TextLoop from 'react-text-loop'
-import styled from 'styled-components'
-import { Scroller } from '../components'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import details from '../data/details.json'
+import React from "react";
+import { Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import TextLoop from "react-text-loop";
+import styled from "styled-components";
+import { Scroller } from "../components";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import details from "../data/details.json";
 
 const Dot = styled.div({
-  color: '#f06000',
-  display: 'inline'
-})
+  color: "#f06000",
+  display: "inline",
+});
 
 export class Home extends React.Component {
-  render () {
+  render() {
     return (
       <section id="home" className="home d-flex align-items-center">
         <Container>
@@ -24,9 +24,10 @@ export class Home extends React.Component {
               {details.lastName}
             </h1>
             <span>
-              Je suis{' '}
+              Je suis{" "}
               <TextLoop
-                springConfig={{ stiffness: 180, damping: 10 }}
+                className="textloop"
+                springConfig={{ stiffness: 150, damping: 20 }}
                 interval={2000}
               >
                 {details.titles.map((t) => (
@@ -34,6 +35,7 @@ export class Home extends React.Component {
                 ))}
               </TextLoop>
             </span>
+
             <ul className="social-icons light list-inline mb-0 mt-4">
               {details.socialNetworks.map((network) => (
                 <li className="list-inline-item" key={network.iconName}>
@@ -63,8 +65,8 @@ export class Home extends React.Component {
           </div>
         </Container>
       </section>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

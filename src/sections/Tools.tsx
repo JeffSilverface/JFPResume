@@ -15,8 +15,10 @@ export class Tools extends React.Component {
               <Col md={3} xs={6}>
                 <div className="knowledge">
                   <div className="item">
-                    <img className="icons" src={t.image} alt={t.name} />
-                    <p>{t.name}</p>
+                    <a href={t.link} target="_blank" rel="noopener noreferrer">
+                      <img className="icons" src={t.image} alt={t.name} />
+                      <p>{t.name}</p>
+                    </a>
                   </div>
                 </div>
               </Col>
