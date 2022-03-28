@@ -21,9 +21,9 @@
       "link": "https://www.electronjs.org/"
     },
     {
-      "name": "Wordpress",
-      "image": "/images/WordPress.svg",
-      "link": "https://fr.wordpress.org/"
+      "name": "Vue JS",
+      "image": "/images/Vue.svg",
+      "link": "https://vuejs.org/"
     },
     {
       "name": "TypeScript",
