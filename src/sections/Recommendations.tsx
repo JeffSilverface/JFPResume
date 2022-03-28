@@ -15,7 +15,7 @@ export class Recommendations extends React.Component {
       dots: true,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 5000,
       slidesToShow: 1,
       slidesToScroll: 1,
       pauseOnHover: true,
@@ -30,7 +30,7 @@ export class Recommendations extends React.Component {
                 <div className="slick-slide" key={r.name}>
                   <div className="text-center mx-auto">
                     <div className="mb-3 mx-auto">
-                      <img src={r.avatar} alt={r.name} />
+                      <img className="avatar" src={r.avatar} alt={r.name} />
                     </div>
                     <h4 className="mt-3 mb-0">{r.name}</h4>
                     <span className="subtitle">{r.jobTitle}</span>

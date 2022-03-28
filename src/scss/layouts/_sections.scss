@@ -103,6 +103,10 @@ section {
   background: linear-gradient(0.25turn, $color-bck-dark, $color-light);
   min-height: 100vh;
 
+  .avatar {
+    border-radius: 50%;
+  }
+
   .subtitle {
     color: $color-white;
   }
