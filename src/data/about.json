@@ -10,7 +10,7 @@
       "color": "#f06000"
     },
     {
-      "name": "React, Wordpress",
+      "name": "React, Vue",
       "confidence": 90,
       "color": "#f06000"
     },
@@ -26,7 +26,7 @@
     },
     {
       "name": "PHP 7, Symfony",
-      "confidence": 80,
+      "confidence": 70,
       "color": "#3f87a6"
     },
     {
